@@ -31,6 +31,7 @@ public class ViewAllItemsServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		ListItemHelper showItems = new ListItemHelper();
 		request.setAttribute("allItems", showItems.showAllItems());
+		System.out.println(showItems.showAllItems());
 		String path = "/cars-list.jsp";
 		if (showItems.showAllItems().isEmpty()) {
 			path = "/index.html";

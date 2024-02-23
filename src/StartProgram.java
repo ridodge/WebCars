@@ -60,7 +60,7 @@ public class StartProgram {
 		if (!foundItems.isEmpty()) {
 			System.out.println("Found Results.");
 			for (ListItem l : foundItems) {
-				System.out.println(l.getId() + " : " + l.returnItemDetails());
+				System.out.println(l.getId() + " : " + l.toString());
 			}
 			System.out.print("Which ID to edit: ");
 			int idToEdit = in.nextInt();
@@ -131,7 +131,7 @@ public class StartProgram {
 			// TODO Auto-generated method stub
 			List<ListItem> allItems = lih.showAllItems();
 			for (ListItem singleItem : allItems) {
-				System.out.println(singleItem.returnItemDetails());
+				System.out.println(singleItem.toString());
 			}
 
 	}

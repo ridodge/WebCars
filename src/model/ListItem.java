@@ -56,7 +56,7 @@ public class ListItem {
 	public ListItem() {
 	}
 
-	public String returnItemDetails() {
+	public String toString() {
 		return this.make + ": " + this.model;
 	}
 
